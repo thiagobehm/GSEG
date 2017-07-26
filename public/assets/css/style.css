@@ -1,564 +1,551 @@
-/*Reference colors*/
-
-
-/*
+        /*Reference colors*/
+      /*
 company: #112851
 aqua blue : #00adef
 
 */
-
-
-/* Menu Style*/
-
-.navbar-brand {
-  padding: 0;
-  margin-left: 20%;
-}
-
-.navbar-brand img {
-  width: 115px;
-  margin: 12px;
-}
-
-.navbar-blue {
-  background-color: #112851;
-  height: 100px;
-}
-
-.navbar-nav>li>a {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px;
-  color: #fff;
-}
-
-.navbar-blue .navbar-nav>.active>a {
-  color: #0772a7;
-}
-
-ul>li>a::after {
-  content: '|';
-  margin-left: 10px;
-  position: absolute;
-}
-
-.navbar-nav>li>a:hover {
-  color: #0772a7;
-  font-weight: 200;
-  background-color: transparent;
-}
-
-.navbar-toggle {
-  background-color: #efefef;
-  margin-top: 30px;
-}
-
-.navbar-toggle .icon-bar {
-  color: #fff;
-}
-
-.navbar-nav {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding-left: 30%;
-  margin-top: 35px;
-  width: 100%;
-}
-
-.navbar-collapse {
-  overflow-x: hidden;
-}
-
-.navbar-collapse.in ul li a:hover {
-  background-color: #4596EA;
-  color: #f9f9f9;
-}
-
-.container-fluid.submenu {
-  padding: 0;
-  margin: 0;
-}
-
-.navbar-blue .navbar-toggle .icon-bar {
-  background-color: #4882ea;
-}
-
-.navbar-toggle {
-  background-color: #05122a;
-}
-
-.menu-xs .navbar-fixed-bottom {
-  background-color: #112851;
-  text-align: center;
-  height: 60px;
-}
-
-.navbar-fixed-bottom .menu-contact {
-  padding: 15px 0;
-  margin: 0;
-}
-
-.navbar-fixed-bottom .menu-contact a:hover {
-  border: none;
-}
-
-
-/*Contacs menu*/
-
-.menu-contact {
-  display: inline-block;
-  font-family: 'Oswald', sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.5px;
-  color: #fff;
-  margin-top: 30px;
-}
-
-.menu-contact span {
-  display: inline-block;
-  margin: 0 10px 0px 25px
-}
-
-.menu-contact a {
-  text-decoration: none;
-  color: #fff;
-  cursor: pointer;
-}
-
-.menu-contact a:visited {
-  color: #fff;
-}
-
-.menu-contact a:hover {
-  color: #fff;
-  border-bottom: 1px solid white;
-}
-
-
-/*sprite contatos*/
-
-.ca {
-  background: url('../img/sprite-contact.png');
-  background-repeat: no-repeat;
-  width: 28px;
-  height: 28px;
-}
-
-.ca.ca-phone {
-  background-position: 0 -2px;
-}
-
-.ca.ca-mail {
-  background-position: -31px -3px;
-}
-
-.ca.ca-whats {
-  background-position: -61px -4px;
-}
-
-.ca.ca-face {
-  background-position: -90px -3px;
-}
-
-
-/*sprite seguros*/
-
-.se {
-  background: url('../img/sprite-lista-seguros.png');
-  background-repeat: no-repeat;
-  width: 3px;
-  height: 37px;
-  padding: 25px;
-  display: block;
-}
-
-.se.se-car {
-  background-position: 0 -10px;
-}
-
-.se.se-house {
-  background-position: -51px 2px;
-  padding: 26px 21px;
-}
-
-.se.se-life {
-  background-position: -203px -3px;
-}
-
-.se.se-business {
-  background-position: -295px -1px;
-  margin-left: 12px;
-}
-
-.se.se-others {
-  background-position: -140px 1px;
-  padding: 25px 32px;
-}
-
-
-/*sprite seguradoras*/
-
-.seg {
-  background: url('../img/logo-seguradoras-sprite.png');
-  background-repeat: no-repeat;
-  display: inline-block;
-}
-
-.seg.seg-HDI {
-  background-position: 0 0;
-  width: 77px;
-  height: 56px;
-}
-
-.seg.seg-Azul {
-  background-position: -82px 0;
-  width: 62px;
-  height: 63px;
-}
-
-.seg.seg-PortoSeg {
-  background-position: -145px 0;
-  width: 62px;
-  height: 80px;
-}
-
-.seg.seg-Allianz {
-  background-position: -207px -14px;
-  width: 103px;
-  height: 28px;
-}
-
-.seg.seg-Liberty {
-  background-position: -313px -3px;
-  width: 111px;
-  height: 53px;
-}
-
-.seg.seg-Mitsui {
-  background-position: -429px -2px;
-  width: 116px;
-  height: 59px;
-}
-
-.seg.seg-Itau {
-  background-position: -548px 0;
-  width: 63px;
-  height: 61px;
-}
-
-.seg.seg-MetLife {
-  background-position: -616px 0;
-  width: 80px;
-  height: 60px;
-}
-
-.seg.seg-SulAmerica {
-  background-position: -698px -19px;
-  width: 87px;
-  height: 23px;
-}
-
-.seg.seg-AIG {
-  background-position: -108px -88px;
-  width: 89px;
-  height: 51px;
-}
-
-.seg.seg-Mapfre {
-  background-position: -198px -98px;
-  width: 114px;
-  height: 32px;
-}
-
-.seg.seg-TokioMarine {
-  background-position: -313px -78px;
-  width: 81px;
-  height: 72px;
-}
-
-.seg.seg-Bradesco {
-  background-position: -396px -76px;
-  width: 72px;
-  height: 75px;
-}
-
-.seg.seg-Icatu {
-  background-position: -584px -83px;
-  width: 80px;
-  height: 60px;
-}
-
-.seg.seg-Zurich {
-  background-position: -971px -101px;
-  width: 88px;
-  height: 28px;
-}
-
-section {
-  padding: 40px;
-}
-
-section.seguradoras .btn-transparent {
-  padding: 40px;
-}
-
-
-/*hero area*/
-
-.hero {
-  background: url('../img/hero.jpg') 0 -200px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  padding: 200px;
-}
-
-.title-hero-text {
-  text-align: center;
-  font-size: 70px;
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-  text-shadow: 3px 2px #000;
-  letter-spacing: 5px;
-  line-height: 75px;
-}
-
-.title-hero .title {
-  color: #eff3fa;
-}
-
-.title-hero .gseg {
-  color: #00adef;
-}
-
-span:hover {
-  position: relative;
-}
-
-span[title]:hover:after {
-  content: attr(title);
-  padding: 4px 20px;
-  max-width: 180px;
-  margin: 0 auto;
-  margin-top: 5px;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  white-space: nowrap;
-  color: #fff;
-  z-index: 20px;
-  background: #000;
-  border-radius: 60px 0px;
-}
-
-
-/*about area*/
-
-section.about {
-  background-color: #ebe8e8;
-}
-
-.about h3, .about p, .about h4, .contato h3 {
-  color: #06080C;
-}
-
-.about .description {
-  font-family: 'Oxygen', sans-serif;
-  font-size: 15px;
-  line-height: 20px;
-  font-weight: lighter;
-  letter-spacing: 0.5px;
-  text-shadow: 1px 1px #f3f0f0;
-}
-
-.about ul li {
-  line-height: 40px;
-  text-align: left;
-}
-
-
-/*button*/
-
-.btn-transparent {
-  display: inline-block;
-  padding: 50px;
-  background: transparent;
-  border: 2px solid transparent;
-}
-
-.btn-transparent:hover {
-  border: 2px solid #fff;
-}
-
-.btn-blue {
-  font-family: 'Oswald', sans-serif;
-  font-size: 24px;
-  text-transform: uppercase;
-  background: #00adef;
-  background: -moz-linear-gradient(top, rgb(76, 169, 252) 0%, rgb(24, 27, 114) 100%);
-  background: -webkit-linear-gradient(top, rgb(76, 169, 252) 0%, rgb(24, 27, 114) 100%);
-  background: -o-linear-gradient(top, rgb(76, 169, 252) 0%, rgb(24, 27, 114) 100%);
-  background: -ms-linear-gradient(top, rgb(76, 169, 252) 0%, rgb(24, 27, 114) 100%);
-  background: linear-gradient(top, rgb(76, 169, 252) 0%, rgb(24, 27, 114) 100%);
-  text-align: center;
-  color: #fff;
-  border: none;
-  -webkit-box-shadow: 7px 8px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 7px 8px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 7px 8px 5px 0px rgba(0, 0, 0, 0.75);
-}
-
-.btn-blue:hover {
-  background: #000;
-  background: -moz-linear-gradient(top, rgb(5, 25, 58) 0%, rgb(39, 102, 206));
-  background: -webkit-linear-gradient(top, rgb(5, 25, 58) 0%, rgb(39, 102, 206));
-  background: -o-linear-gradient(top, rgb(5, 25, 58) 0%, rgb(39, 102, 206));
-  background: -ms-linear-gradient(top, rgb(5, 25, 58) 0%, rgb(39, 102, 206));
-  background: linear-gradient(top, rgb(5, 25, 58) 0%, rgb(39, 102, 206));
-  color: #fff;
-  margin-left: 2px;
-}
-
-
-/*General Style of page*/
-
-body {
-  padding-top: 100px;
-}
-
-h3 {
-  font-size: 28px;
-  font-family: 'Oswald', sans-serif;
-  color: #fff;
-  text-align: center;
-  margin: 50px 0;
-}
-
-.wrapperdiv {
-  position: relative;
-  top: -150px;
-}
-
-h4 {
-  font-family: 'Oxygen', sans-serif;
-  font-size: 22px;
-  color: #00adef;
-  margin: 40px 0;
-}
-
-
-/*form*/
-
-.form-control {
-  background: #000;
-  color: #fff;
-}
-
-
-/*Footer*/
-
-footer {
-  background: #2d2d2d;
-  padding: 40px 0;
-}
-
-footer p {
-  color: #fff;
-  text-align: center;
-  font-family: 'Oswald', sans-serif;
-  font-size: 18px;
-  font-weight: lighter;
-  line-height: 23px;
-  letter-spacing: 0.5px;
-}
-
-
-/*servicos*/
-
-.servico {
-  background: -webkit-linear-gradient(top, rgb(76, 169, 252) 0%, rgb(24, 27, 114) 100%);
-  background: -moz-linear-gradient(top, rgb(76, 169, 252) 0%, rgb(24, 27, 114) 100%);
-  background: -o-linear-gradient(top, rgb(76, 169, 252) 0%, rgb(24, 27, 114) 100%);
-  background: -ms-linear-gradient(top, rgb(76, 169, 252) 0%, rgb(24, 27, 114) 100%);
-  background: linear-gradien(top, rgb(76, 169, 252) 0%, rgb(24, 27, 114) 100%);
-  height: auto;
-  background-color: rgb(0, 142, 130);
-  padding: 10px;
-}
-
-.servico h3.subTitle {
-  margin: 0;
-  padding: 0;
-}
-
-
-/*Media queries*/
-
-@media screen and (max-width: 1024px) {
-  .hero {
-    background: url('../img/hero.jpg') 0 0;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 100px;
-  }
-  .menu-contact {
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  ul>li>a::after {
-    content: none;
-  }
-  .form-horizontal .control-label {
-    text-align: left;
-  }
-  .wrapperdiv {
-    top: -250px;
-  }
-  .navbar-nav {
-    background: #112851;
-    margin-top: 25px;
-    width: 120%;
-    padding-left: 30%;
-  }
-  .nav>li {
-    width: 50%;
-    border-bottom: 1px solid white;
-  }
-  .hero {
-    background: url('../img/hero.jpg') 0 0;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 100px;
-  }
-  .title-hero-text {
-    text-align: center;
-    font-size: 40px;
-    font-family: 'Oswald', sans-serif;
-    text-shadow: 2px 2px #000;
-    letter-spacing: 0px;
-    line-height: 45px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  body {
-    padding-bottom: 40px;
-  }
-  .hero {
-    background: url('../img/hero.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-  }
-  .btn-blue {
-    font-size: 16px;
-  }
-  .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
-    overflow: hidden;
-  }
-  .wrapperdiv {
-    top: -100px;
-  }
-}
+      /* Menu Style*/
+
+      .navbar-brand {
+        padding: 0;
+        margin-left: 20%;
+      }
+
+      .navbar-brand img {
+        width: 115px;
+        margin: 12px;
+      }
+
+      .navbar-blue {
+        background-color: #112851;
+        height: 100px;
+      }
+
+      .navbar-nav>li>a {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 20px;
+        color: #fff;
+      }
+
+      .navbar-blue .navbar-nav>.active>a {
+        color: #0772a7;
+      }
+
+      ul>li>a::after {
+        content: '|';
+        margin-left: 10px;
+        position: absolute;
+      }
+
+      .navbar-nav>li>a:hover {
+        color: #0772a7;
+        font-weight: 200;
+        background-color: transparent;
+      }
+
+      .navbar-toggle {
+        background-color: #efefef;
+        margin-top: 30px;
+      }
+
+      .navbar-toggle .icon-bar {
+        color: #fff;
+      }
+
+      .navbar-nav {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding-left: 30%;
+        margin-top: 35px;
+        width: 100%;
+      }
+
+      .navbar-collapse {
+        overflow-x: hidden;
+      }
+
+      .navbar-collapse.in ul li a:hover {
+        background-color: #4596EA;
+        color: #f9f9f9;
+      }
+
+      .container-fluid.submenu {
+        padding: 0;
+        margin: 0;
+      }
+
+      .navbar-blue .navbar-toggle .icon-bar {
+        background-color: #4882ea;
+      }
+
+      .navbar-toggle {
+        background-color: #05122a;
+      }
+
+      .menu-xs .navbar-fixed-bottom {
+        background-color: #112851;
+        text-align: center;
+        height: 60px;
+      }
+
+      .navbar-fixed-bottom .menu-contact {
+        padding: 15px 0;
+        margin: 0;
+      }
+
+      .navbar-fixed-bottom .menu-contact a:hover {
+        border: none;
+      }
+      /*Contacs menu*/
+
+      .menu-contact {
+        display: inline-block;
+        font-family: 'Oswald', sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+        color: #fff;
+        margin-top: 30px;
+      }
+
+      .menu-contact span {
+        display: inline-block;
+        margin: 0 10px 0px 25px
+      }
+
+      .menu-contact a {
+        text-decoration: none;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      .menu-contact a:visited {
+        color: #fff;
+      }
+
+      .menu-contact a:hover {
+        color: #fff;
+        border-bottom: 1px solid white;
+      }
+      /*sprite contatos*/
+
+      .ca {
+        background: url('../img/sprite-contact.png');
+        background-repeat: no-repeat;
+        width: 28px;
+        height: 28px;
+      }
+
+      .ca.ca-phone {
+        background-position: 0 -2px;
+      }
+
+      .ca.ca-mail {
+        background-position: -31px -3px;
+      }
+
+      .ca.ca-whats {
+        background-position: -61px -4px;
+      }
+
+      .ca.ca-face {
+        background-position: -90px -3px;
+      }
+      /*sprite seguros*/
+
+      .se {
+        background: url('../img/sprite-lista-seguros.png');
+        background-repeat: no-repeat;
+        width: 3px;
+        height: 37px;
+        padding: 25px;
+        display: block;
+      }
+
+      .se.se-car {
+        background-position: 0 -10px;
+      }
+
+      .se.se-house {
+        background-position: -51px 2px;
+        padding: 26px 21px;
+      }
+
+      .se.se-life {
+        background-position: -203px -3px;
+      }
+
+      .se.se-business {
+        background-position: -295px -1px;
+        margin-left: 12px;
+      }
+
+      .se.se-others {
+        background-position: -140px 1px;
+        padding: 25px 32px;
+      }
+      /*sprite seguradoras*/
+
+      .seg {
+        background: url('../img/logo-seguradoras-sprite.png');
+        background-repeat: no-repeat;
+        display: inline-block;
+      }
+
+      .seg.seg-HDI {
+        background-position: 0 0;
+        width: 77px;
+        height: 56px;
+      }
+
+      .seg.seg-Azul {
+        background-position: -82px 0;
+        width: 62px;
+        height: 63px;
+      }
+
+      .seg.seg-PortoSeg {
+        background-position: -145px 0;
+        width: 62px;
+        height: 80px;
+      }
+
+      .seg.seg-Allianz {
+        background-position: -207px -14px;
+        width: 103px;
+        height: 28px;
+      }
+
+      .seg.seg-Liberty {
+        background-position: -313px -3px;
+        width: 111px;
+        height: 53px;
+      }
+
+      .seg.seg-Mitsui {
+        background-position: -429px -2px;
+        width: 116px;
+        height: 59px;
+      }
+
+      .seg.seg-Itau {
+        background-position: -548px 0;
+        width: 63px;
+        height: 61px;
+      }
+
+      .seg.seg-MetLife {
+        background-position: -616px 0;
+        width: 80px;
+        height: 60px;
+      }
+
+      .seg.seg-SulAmerica {
+        background-position: -698px -19px;
+        width: 87px;
+        height: 23px;
+      }
+
+      .seg.seg-AIG {
+        background-position: -108px -88px;
+        width: 89px;
+        height: 51px;
+      }
+
+      .seg.seg-Mapfre {
+        background-position: -198px -98px;
+        width: 114px;
+        height: 32px;
+      }
+
+      .seg.seg-TokioMarine {
+        background-position: -313px -78px;
+        width: 81px;
+        height: 72px;
+      }
+
+      .seg.seg-Bradesco {
+        background-position: -396px -76px;
+        width: 72px;
+        height: 75px;
+      }
+
+      .seg.seg-Icatu {
+        background-position: -584px -83px;
+        width: 80px;
+        height: 60px;
+      }
+
+      .seg.seg-Zurich {
+        background-position: -971px -101px;
+        width: 88px;
+        height: 28px;
+      }
+
+      section {
+        padding: 40px;
+      }
+
+      section.seguradoras .btn-transparent {
+        padding: 40px;
+      }
+      /*hero area*/
+
+      .hero {
+        background: url('../img/hero.jpg') 0 -200px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        padding: 200px;
+      }
+
+      .title-hero-text {
+        text-align: center;
+        font-size: 70px;
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        text-shadow: 3px 2px #000;
+        letter-spacing: 5px;
+        line-height: 75px;
+      }
+
+      .title-hero .title {
+        color: #eff3fa;
+      }
+
+      .title-hero .gseg {
+        color: #00adef;
+      }
+
+      span:hover {
+        position: relative;
+      }
+
+      span[title]:hover:after {
+        content: attr(title);
+        padding: 4px 20px;
+        max-width: 180px;
+        margin: 0 auto;
+        margin-top: 5px;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        white-space: nowrap;
+        color: #fff;
+        z-index: 20px;
+        background: #000;
+        border-radius: 60px 0px;
+      }
+      /*about area*/
+
+      section.about {
+        background-color: #ebe8e8;
+      }
+
+      .about h3, .about p, .about h4, .contato h3 {
+        color: #06080C;
+      }
+
+      .about .description {
+        font-family: 'Oxygen', sans-serif;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: lighter;
+        letter-spacing: 0.5px;
+        text-shadow: 1px 1px #f3f0f0;
+      }
+
+      .about ul li {
+        line-height: 40px;
+        text-align: left;
+      }
+      /*button*/
+
+      .btn-transparent {
+        display: inline-block;
+        padding: 50px;
+        background: transparent;
+        border: 2px solid transparent;
+      }
+
+      .btn-transparent:hover {
+        border: 2px solid #fff;
+      }
+
+      .btn-blue {
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+        text-transform: uppercase;
+        background: #00adef;
+        background: -moz-linear-gradient(top, rgb(76, 169, 252) 0%, rgb(24, 27, 114) 100%);
+        background: -webkit-linear-gradient(top, rgb(76, 169, 252) 0%, rgb(24, 27, 114) 100%);
+        background: -o-linear-gradient(top, rgb(76, 169, 252) 0%, rgb(24, 27, 114) 100%);
+        background: -ms-linear-gradient(top, rgb(76, 169, 252) 0%, rgb(24, 27, 114) 100%);
+        background: linear-gradient(top, rgb(76, 169, 252) 0%, rgb(24, 27, 114) 100%);
+        text-align: center;
+        color: #fff;
+        border: none;
+        -webkit-box-shadow: 7px 8px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 7px 8px 5px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 7px 8px 5px 0px rgba(0, 0, 0, 0.75);
+      }
+
+      .btn-blue:hover {
+        background: #000;
+        background: -moz-linear-gradient(top, rgb(5, 25, 58) 0%, rgb(39, 102, 206));
+        background: -webkit-linear-gradient(top, rgb(5, 25, 58) 0%, rgb(39, 102, 206));
+        background: -o-linear-gradient(top, rgb(5, 25, 58) 0%, rgb(39, 102, 206));
+        background: -ms-linear-gradient(top, rgb(5, 25, 58) 0%, rgb(39, 102, 206));
+        background: linear-gradient(top, rgb(5, 25, 58) 0%, rgb(39, 102, 206));
+        color: #fff;
+        margin-left: 2px;
+      }
+      /*General Style of page*/
+
+      body {
+        padding-top: 100px;
+      }
+
+      h3 {
+        font-size: 28px;
+        font-family: 'Oswald', sans-serif;
+        color: #fff;
+        text-align: center;
+        margin: 50px 0;
+      }
+
+      .wrapperdiv {
+        position: relative;
+        top: -150px;
+      }
+
+      h4 {
+        font-family: 'Oxygen', sans-serif;
+        font-size: 22px;
+        color: #00adef;
+        margin: 40px 0;
+      }
+      /*form*/
+
+      .form-control {
+        background: #000;
+        color: #fff;
+      }
+      /*Footer*/
+
+      footer {
+        background: #2d2d2d;
+        padding: 40px 0;
+      }
+
+      footer p {
+        color: #fff;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        font-size: 18px;
+        font-weight: lighter;
+        line-height: 23px;
+        letter-spacing: 0.5px;
+      }
+      /*servicos*/
+
+      .servico {
+        background: -webkit-linear-gradient(top, rgb(76, 169, 252) 0%, rgb(24, 27, 114) 100%);
+        background: -moz-linear-gradient(top, rgb(76, 169, 252) 0%, rgb(24, 27, 114) 100%);
+        background: -o-linear-gradient(top, rgb(76, 169, 252) 0%, rgb(24, 27, 114) 100%);
+        background: -ms-linear-gradient(top, rgb(76, 169, 252) 0%, rgb(24, 27, 114) 100%);
+        background: linear-gradien(top, rgb(76, 169, 252) 0%, rgb(24, 27, 114) 100%);
+        height: auto;
+        background-color: rgb(0, 142, 130);
+        padding: 10px;
+      }
+
+      .servico h3.subTitle {
+        margin: 0;
+        padding: 0;
+      }
+      /*Media queries*/
+
+      @media screen and (max-width: 1024px) {
+        .hero {
+          background: url('../img/hero.jpg') 0 0;
+          background-attachment: fixed;
+          background-repeat: no-repeat;
+          background-size: cover;
+          padding: 100px;
+        }
+        .menu-contact {
+          font-size: 12px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        ul>li>a::after {
+          content: none;
+        }
+        .form-horizontal .control-label {
+          text-align: left;
+        }
+        .wrapperdiv {
+          top: -250px;
+        }
+        .navbar-nav {
+          background: #112851;
+          margin-top: 25px;
+          width: 120%;
+          padding-left: 30%;
+        }
+        .nav>li {
+          width: 50%;
+          border-bottom: 1px solid white;
+        }
+        .hero {
+          background: url('../img/hero.jpg') 0 0;
+          background-attachment: fixed;
+          background-repeat: no-repeat;
+          background-size: cover;
+          padding: 100px;
+        }
+        .title-hero-text {
+          text-align: center;
+          font-size: 40px;
+          font-family: 'Oswald', sans-serif;
+          text-shadow: 2px 2px #000;
+          letter-spacing: 0px;
+          line-height: 45px;
+        }
+      }
+
+      @media screen and (max-width: 700px) {
+        body {
+          padding-bottom: 40px;
+        }
+        .hero {
+          background: url('../img/hero.jpg');
+          background-attachment: fixed;
+          background-size: cover;
+        }
+        .btn-blue {
+          font-size: 16px;
+        }
+        .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+          overflow: hidden;
+        }
+        .wrapperdiv {
+          top: -100px;
+        }
+        .about .description {
+          font-family: 'Oxygen', sans-serif;
+          font-size: 12px;
+          line-height: 17px;
+          font-weight: lighter;
+          letter-spacing: 0px;
+          text-shadow: 1px 1px #f3f0f0;
+        }
+        .about ul li {
+          line-height: 22px;
+          text-align: left;
+        }
+        footer p {
+          font-size: 12px;
+          letter-spacing: 1px;
+        }
