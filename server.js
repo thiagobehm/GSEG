@@ -29,7 +29,7 @@ app.use(session({
 
 app.get('/', (req, res) => {
   res.render('home.hbs', {
-    pageTitle: 'Home',
+    pageTitle: 'GSEG Seguradora',
     success: session.success = false,
     erros: false,
     data: '',
