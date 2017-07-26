@@ -1,0 +1,67 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 text-center">
+      <h3>Entre em contato</h3>
+    </div>
+  </div><!-- row -->
+  <form class="form-horizontal"  method="post" id="myForm">
+    {{# if success}}
+    <div class="col-xs-6 col-xs-offset-3">
+      <div class="alert alert-success alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>Sucesso!</strong> Mensagem enviada. Em breve entraremos em contato.
+      </div>
+    </div>
+    {{/if}}
+
+    {{# if erros}}
+    <div class="col-xs-12 col-lg-6 col-lg-offset-3 ">
+      <div class="alert alert-danger alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong class="text-center">Campos preenchidos incorretamente</strong>
+        <ul>
+          {{# each erros}}
+            <li>{{this.msg}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    {{/if}}
+
+    {{# if mailError.error}}
+    <div class="col-xs-6 col-xs-offset-3">
+      <div class="alert alert-warning alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>{{mailError.message}}</strong>
+      </div>
+    </div>
+    {{/if}}
+    <div class="form-group">
+      <label for="name" class="col-xs-3 control-label">Nome:</label>
+      <div class="col-xs-12  col-md-6">
+        <input type="text" class="form-control" name="nome" id="name" placeholder="Nome...." value="{{data.nome}}">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email" class="col-xs-3 control-label">Email:</label>
+      <div class="col-xs-12  col-md-6">
+        <input type="email" class="form-control" name="email" id="email" placeholder="Email para contato" value="{{data.email}}">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="assunto" class="col-xs-3 control-label">Assunto:</label>
+      <div class="col-xs-12  col-md-6">
+        <input type="text" class="form-control" name="assunto" id="assunto" placeholder="Assunto" value="{{data.assunto}}">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="descricao" class="col-xs-3 control-label">Descrição:</label>
+      <div class="col-xs-12  col-md-6">
+        <textarea id="descricao" class="form-control" name="descricao" rows="5" placeholder="Descreva sua dúvida/pergunta" value="{{data.descricao}}"></textarea>
+      </div>
+    </div>
+    <div class="col-xs-offset-3">
+      <button type="button" class="btn btn-blue submit" id="submit">Enviar</button>
+    </div>
+  </form>
+</div><!-- container -->

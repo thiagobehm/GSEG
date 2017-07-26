@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{pageTitle}}</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Oxygen|Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/img/favicon.png"/>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="200">
+  <!-- Menu Section -->
+  <header>
+    {{> menu}}
+  </header>
+  <section class="hero" id="hero">
+    <div class="title-hero">
+      <div class="title-hero-text">
+        <p class="title">
+          Faça seu seguro com a
+        </p>
+        <p class="gseg">GSEG</p>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top: 40px;">
+      <a href="#contato" role="button" class="btn btn-lg btn-blue">Entre em contato</a>
+    </div>
+  </section>
+
+  <section class="servico">,
+    <div class="wrapperdiv" id="servico"></div>
+    {{> servicos}}
+  </section>
+
+  <section class="seguradoras">
+    <div class="wrapperdiv" id="seguradoras"></div>
+    {{> seguradoras}}
+  </section>
+
+  <section class="about">
+    <div class="wrapperdiv" id="about"></div>
+    {{> about}}
+  </section> <!--about-->
+
+  <section class="contato">
+    <div class="wrapperdiv" id="contato"></div>
+    {{> contato}}
+  </section>
+  <footer>
+    {{> footer}}
+
+    {{> bottomMenu}}
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="assets/js/scripts.js"></script>
+
+</body>
+</html>
