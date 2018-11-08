@@ -5,5 +5,5 @@ Website of GSEG insurer. It's a portal developed to show their services and how 
 * NodeJS
 * ExpressJS
 * NodeMailer
-\* Handlebar. 
-\* Site hosted using Heroku.
+* Handlebar. 
+* Site hosted using Heroku.
